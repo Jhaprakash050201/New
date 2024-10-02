@@ -135,64 +135,61 @@ const ExplorePrompts = () => {
           Explore a Vast Range of AI Prompt Categories!
         </h1>
         <p className="text-center mb-6 text-gray-600">
-          Unlock a treasure trove of over 10,000 prompts tailored for every need. Whether you're a professional, student, or creator, this bundle has something for everyone!
+          Unlock a treasure trove of over 10,000 prompts tailored for every need. Whether you&apos;re a professional, student, or creator, this bundle has something for everyone!
         </p>
   
         {/* Tag Selection */}
         <div className="flex flex-col items-center mb-8">
-          <div className="relative mb-4">
+          <div className="relative">
             <select
+              className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
               onChange={handleTagSelection}
-              className="border rounded-lg px-4 py-2 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 hover:shadow-lg transition duration-200"
             >
-              <option value="">Select a category...</option>
+              <option value="">Select a Tag</option>
               {tagsList.map((tag, index) => (
                 <option key={index} value={tag}>
                   {tag}
                 </option>
               ))}
             </select>
-          </div>
-  
-          {/* Display Tags as Buttons */}
-          <div className="flex flex-wrap justify-center space-x-2 space-y-2 max-w-lg">
-            {tagsList.slice(0, 5).map((tag, index) => (
-              <button
-                key={index}
-                onClick={() => setSelectedTag(tag)}
-                className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full px-3 py-2 text-sm hover:from-indigo-600 hover:to-purple-600 transition-all duration-200"
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg
+                className="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
               >
-                {tag}
-              </button>
-            ))}
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
+            </div>
           </div>
         </div>
   
-        {/* Categories in a Beautiful Box */}
-        {selectedTag && filteredCategories.length > 0 && (
-          <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-xl border border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-              {selectedTag} Categories
-            </h2>
-            <ul className="space-y-4">
-              {filteredCategories.map((category) => (
-                <li
-                  key={category.name}
-                  className="bg-gray-100 hover:bg-gray-200 p-4 rounded-lg shadow-sm border border-gray-300 transition duration-200"
-                >
-                  <span className="font-semibold text-gray-700">{category.name}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-  
-        {/* No Categories Found */}
-        {selectedTag && filteredCategories.length === 0 && (
-          <p className="text-center text-gray-600">No categories found for this selection.</p>
-        )}
+        {/* Filtered Categories */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredCategories.length > 0 ? (
+            filteredCategories.map((category, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              >
+                <h2 className="text-2xl font-bold mb-4">{category.name}</h2>
+                <ul className="list-disc pl-4">
+                  {category.tags.map((tag, idx) => (
+                    <li key={idx} className="text-gray-700">
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))
+          ) : (
+            <p className="text-center text-gray-600">
+              No categories available for the selected tag.
+            </p>
+          )}
+        </div>
       </div>
     );
   };
-  
-  export default ExplorePrompts;
+
+export default ExplorePrompts;
