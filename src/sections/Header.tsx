@@ -1,19 +1,20 @@
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/logosaas.png";
 import Image from "next/image";
-import MenuIcon from "@/assets/menu.svg";
 
 export const Header = () => {
   return (
     <>
       {/* Ribbon at the top */}
-      <div className="sticky top-0 z-20 backdrop-blur-sm">
-        <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-          <p className="text-white/60 hidden md:block">
-          Unlock AI Superpowers: Lifetime Access at 50% Off!
+      <div className="sticky top-0 z-20">
+        <div className="flex justify-center items-center py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg font-semibold gap-3 shadow-lg">
+          <p className="text-white/90 hidden md:block animate-pulse">
+            Unlock AI Superpowers:{" "}
+            <span className="font-extrabold text-yellow-300">Lifetime Access</span>{" "}
+            at <span className="text-yellow-300">50% Off!</span>
           </p>
-          <div className="inline-flex gap-1 items-center">
-            <p>Exclusive Launch Deal</p>
+          <div className="inline-flex gap-1 items-center animate-bounce">
+            <p className="font-semibold">Exclusive Launch Deal</p>
             <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
           </div>
         </div>
@@ -25,8 +26,8 @@ export const Header = () => {
           <div className="container">
             <div className="flex items-center justify-between">
               <Image src={Logo} alt="Saas logo" height={40} width={40} />
-              <MenuIcon className="h-5 w-5 md:hidden" />
-              <nav className="hidden md:flex gap-6 text-black/60 items-center">
+              <nav className="flex gap-6 text-black/60 items-center w-full justify-end">
+                {/* Button always visible at the right end */}
                 <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
                   Get for free
                 </button>

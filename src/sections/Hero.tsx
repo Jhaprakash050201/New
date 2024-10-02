@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import domeImage1 from "@/assets/Gemini.png";
@@ -36,11 +36,11 @@ export const Hero = () => {
       <div className="container mx-auto text-center px-4 md:px-0">
         <div className="mx-auto max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            <span className="bg-gradient-to-b from-pink-500 to-yellow-400 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-b from-[#4776e6] to-[#8e54e9] text-transparent bg-clip-text">
               Rise
             </span>{" "}
             <span className="text-black">Above the</span>{" "}
-            <span className="bg-gradient-to-b from-pink-500 to-yellow-400 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-b from-[#4776e6] to-[#8e54e9] text-transparent bg-clip-text">
               Rest
             </span>
             : Become a Leader in Your Field!
@@ -51,7 +51,7 @@ export const Hero = () => {
               <b>Tap into 10,000+ Precise Prompts</b>
             </div>
             <div className={`line ${activeLine === 2 ? "active" : ""}`}>
-              <b> Dive into 100+ AI Tools</b>
+              <b>Dive into 100+ AI Tools</b>
             </div>
           </div>
 

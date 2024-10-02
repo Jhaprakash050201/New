@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import avatar1 from "@/assets/avatar-1.png";
 import avatar2 from "@/assets/avatar-2.png";
 import avatar3 from "@/assets/avatar-3.png";
@@ -14,19 +14,19 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "The prompts are incredibly intuitive and have significantly improved my workflow!",
     imageSrc: avatar1.src,
     name: "Jamie Rivera",
     username: "@jamietechguru00",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool.",
+    text: "I love how easy it is to access powerful AI tools all in one place!",
     imageSrc: avatar2.src,
     name: "Josh Smith",
     username: "@jjsmith",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "This product has truly transformed my approach to AI—I can’t recommend it enough!",
     imageSrc: avatar3.src,
     name: "Morgan Lee",
     username: "@morganleewhiz",
@@ -96,7 +96,7 @@ const TestimonialsColumn = (props: {
           ...new Array(2).fill(0).map((_, index) => (
             <React.Fragment key={index}>
               {props.testimonials.map(({ text, imageSrc, name, username }) => (
-                <div className="card" key={username}>
+                <div className="card bg-white p-4 shadow-lg rounded-md" key={username}>
                   <div>{text}</div>
                   <div className="flex items-center gap-2 mt-5">
                     <Image
@@ -123,16 +123,20 @@ const TestimonialsColumn = (props: {
 
 export const Testimonials = () => {
   return (
-    <section className="bg-white mt-10"> {/* Added margin from the top */}
+    <section style={{ backgroundColor: '#DAE6F9', paddingTop: '50px' }} className="pt-10">
       <div className="container">
-        <div className="section-heading">
-          <div className="flex justify-center">
-            {/* You can add an optional heading image here */}
-          </div>
-
-          <h2 className="section-title mt-5">Transform Your AI Experience Now!</h2>
-          <p className="section-des mt-5">
+        <div className="section-heading text-black text-center"> {/* Center-aligned for better presentation */}
+          <h2 className="section-title text-3xl font-bold mb-3"> {/* Added styles for improved header */}
+            Transform Your AI Experience Now!
+          </h2>
+          <p className="section-des text-lg font-semibold mb-2"> {/* Improved subheader styling */}
+            Trusted by Users Like You
+          </p>
+          <p className="section-des text-lg font-semibold mb-4">
             &quot;Rated 4.7/5 by Over 100 Users!&quot;
+          </p>
+          <p className="mt-5 text-base"> {/* Regular paragraph style */}
+           
           </p>
         </div>
 
@@ -145,3 +149,4 @@ export const Testimonials = () => {
     </section>
   );
 };
+
