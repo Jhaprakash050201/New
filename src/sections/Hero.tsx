@@ -1,5 +1,5 @@
 "use client"; 
-import cogImage from "@/assets/cog.png";
+import cogImage from "@/assets/gpt.webp";
 import cylinderImage from "@/assets/cylinder.png";
 import domeImage1 from "@/assets/Gemini.png";
 import domeImage2 from "@/assets/heygenai.png";
