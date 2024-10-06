@@ -1,6 +1,6 @@
 // pages/certification.js
 import Image from 'next/image';
-import certificateImage from '../assets/certificate.jpeg'; // Ensure this image exists
+import certificateImage from '../assets/companycert.jpg'; // Ensure this image exists
 import metaLogo from '../assets/meta.webp'; // Add logo images in public folder
 import appleLogo from '../assets/apple.jpg';
 import amazonLogo from '../assets/amazon.jpg';

@@ -19,7 +19,7 @@ const BonusSection = () => {
           Unlock a world of savings with our unlimited coupon codes for various AI tools! These codes are designed to significantly reduce your expenses, often covering the cost of your entire purchase.
         </p>
         <h4 className="text-black text-2xl font-semibold mb-4 text-center">Here’s how it works:</h4>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
           <div className="flex flex-col items-center p-6 border border-blue-300 rounded-lg shadow-lg hover:shadow-xl transition duration-300 bg-white transform hover:scale-105">
             <FaTicketAlt className="text-blue-600 text-6xl mb-4 animate-pulse" />
@@ -43,13 +43,13 @@ const BonusSection = () => {
             </p>
           </div>
         </div>
-        
+
         <p className="text-gray-800 text-lg font-bold text-center mb-4">
           Don’t miss out on these valuable savings that enhance your AI experience!
         </p>
-        
+
         <div className="text-center">
-          <button className="mt-6 bg-black text-white font-semibold py-3 px-6 rounded-lg transition duration-300 hover:bg-gray-800 hover:shadow-lg transform hover:scale-105">
+          <button className="mt-6 bg-[#0DB97F] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 hover:bg-[#0ca86f] hover:shadow-lg transform hover:scale-105">
             Get Your Coupons Now!
           </button>
         </div>

@@ -79,7 +79,7 @@ const ExplorePrompts = () => {
         Explore a Vast Range of AI Prompt Categories!
       </h1>
       <p className="text-center mb-6 text-gray-600">
-        Unlock a treasure trove of over 10,000 prompts tailored for every need. Whether you're a professional, student, or creator, this bundle has something for everyone!
+        Unlock a treasure trove of over 10,000 prompts tailored for every need. Whether you&apos;re a professional, student, or creator, this bundle has something for everyone!
       </p>
 
       {/* Tag Selection */}

@@ -21,6 +21,7 @@ export default function Home() {
       <Header />
       <Hero />
       <LogoTicker />
+      <Certification/>
       <Service/>
       <ServicesSection />
       <AItoolsSection />

@@ -1,5 +1,5 @@
 import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logosaas.png";
+import Logo from "@/assets/companylogo-removebg-preview.png";
 import Image from "next/image";
 
 export const Header = () => {
@@ -7,7 +7,7 @@ export const Header = () => {
     <>
       {/* Ribbon at the top */}
       <div className="sticky top-0 z-20">
-        <div className="flex justify-center items-center py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white text-lg font-semibold gap-3 shadow-lg">
+        <div className="flex justify-center items-center py-4 bg-gradient-to-r from-[#134e5e] to-[#71b280] text-white text-lg font-semibold gap-3 shadow-lg">
           <p className="text-white/90 hidden md:block animate-pulse">
             Unlock AI Superpowers:{" "}
             <span className="font-extrabold text-yellow-300">Lifetime Access</span>{" "}
@@ -25,10 +25,10 @@ export const Header = () => {
         <div className="py-5">
           <div className="container">
             <div className="flex items-center justify-between">
-              <Image src={Logo} alt="Saas logo" height={40} width={40} />
+              <Image src={Logo} alt="Saas logo" height={120} width={120} />
               <nav className="flex gap-6 text-black/60 items-center w-full justify-end">
                 {/* Button always visible at the right end */}
-                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+                <button className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
                   Get for free
                 </button>
               </nav>
