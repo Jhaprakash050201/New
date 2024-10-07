@@ -18,7 +18,7 @@ export const Hero = () => {
     return () => clearInterval(interval); // Clean up interval on unmount
   }, []);
 
-  const floatingEffect: { y: number[]; transition: { repeat: number; repeatType: "loop" | "mirror" | "reverse"; duration: number; ease: string; }; } = {
+  const floatingEffect = {
     y: [-10, 10],
     transition: {
       repeat: Infinity,
@@ -92,7 +92,10 @@ export const Hero = () => {
               placeholder="Enter your email"
               className="border border-gray-300 px-4 py-2 rounded-lg w-64"
             />
-            <button className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+            <button
+              className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight transition duration-300 hover:bg-[#0ca86f] hover:shadow-lg transform hover:scale-105"
+              onClick={() => window.location.href = "https://promptcareer.in/getstarted/register"}
+            >
               Start Free Trial
             </button>
           </div>
