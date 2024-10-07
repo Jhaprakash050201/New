@@ -29,7 +29,7 @@ export default function Home() {
       <WhyUs /> 
       <ExplorePrompts/>
       <BonusSection/>
-      <Certification/>
+     
       {/* Add the Why Us section here */}
        {/* Add the Services section here */}
       <Testimonials />
