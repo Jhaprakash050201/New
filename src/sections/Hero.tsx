@@ -92,7 +92,10 @@ export const Hero = () => {
               placeholder="Enter your email"
               className="border border-gray-300 px-4 py-2 rounded-lg w-64"
             />
-            <button className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
+            <button 
+              onClick={() => window.location.href = "https://promptcareer.in/getstarted/register"} 
+              className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
+            >
               Start Free Trial
             </button>
           </div>
