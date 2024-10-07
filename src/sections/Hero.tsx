@@ -96,7 +96,7 @@ export const Hero = () => {
               onClick={() => window.location.href = "https://promptcareer.in/getstarted/register"} 
               className="bg-[#0DB97F] text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight"
             >
-              Start Free Trial
+              Unlock Access
             </button>
           </div>
 
