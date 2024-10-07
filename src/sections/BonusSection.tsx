@@ -49,9 +49,11 @@ const BonusSection = () => {
         </p>
 
         <div className="text-center">
-          <button className="mt-6 bg-[#0DB97F] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 hover:bg-[#0ca86f] hover:shadow-lg transform hover:scale-105">
-            Get Your Coupons Now!
-          </button>
+          <a href="https://promptcareer.in/getstarted/register" target="_blank" rel="noopener noreferrer">
+            <button className="mt-6 bg-[#0DB97F] text-white font-semibold py-3 px-6 rounded-lg transition duration-300 hover:bg-[#0ca86f] hover:shadow-lg transform hover:scale-105">
+              Get Your Coupons Now!
+            </button>
+          </a>
         </div>
       </div>
     </div>
